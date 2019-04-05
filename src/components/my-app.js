@@ -53,8 +53,13 @@ class MyApp extends connect(store)(LitElement) {
 
           --app-drawer-width: 256px;
 
+<<<<<<< HEAD
           --app-primary-color: #7E287F;
           --app-secondary-color: #056839;
+=======
+          --app-primary-color: #E91E63;
+          --app-secondary-color: #293237;
+>>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
           --app-dark-text-color: var(--app-secondary-color);
           --app-light-text-color: white;
           --app-section-even-color: #f7f7f7;
@@ -66,7 +71,11 @@ class MyApp extends connect(store)(LitElement) {
 
           --app-drawer-background-color: var(--app-secondary-color);
           --app-drawer-text-color: var(--app-light-text-color);
+<<<<<<< HEAD
           --app-drawer-selected-color: #7E287F;
+=======
+          --app-drawer-selected-color: #78909C;
+>>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
         }
 
         app-header {
@@ -84,6 +93,7 @@ class MyApp extends connect(store)(LitElement) {
           background-color: var(--app-header-background-color);
         }
 
+<<<<<<< HEAD
         paper-item.fancy {
           --paper-item-focused: {
             background: var(--paper-amber-500);
@@ -94,6 +104,8 @@ class MyApp extends connect(store)(LitElement) {
           };
         }
 
+=======
+>>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
         [main-title] {
           font-family: 'Pacifico';
           text-transform: lowercase;
@@ -176,6 +188,7 @@ class MyApp extends connect(store)(LitElement) {
           text-align: center;
         }
 
+<<<<<<< HEAD
         .container{
           position: absolute;
           right: 12px;
@@ -188,6 +201,8 @@ class MyApp extends connect(store)(LitElement) {
           z-index: 1;
         }
 
+=======
+>>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
         /* Wide layout: when the viewport width is bigger than 460px, layout
         changes to a wide layout */
         @media (min-width: 460px) {
@@ -217,6 +232,7 @@ class MyApp extends connect(store)(LitElement) {
     // Anything that's related to rendering should be done in here.
     return html`
       <!-- Header -->
+<<<<<<< HEAD
       <app-header reveals>
         <app-toolbar class="toolbar-top">
           <button class="menu-btn" title="Menu" @click="${this._menuButtonClicked}">${menuIcon}</button>
@@ -234,6 +250,19 @@ class MyApp extends connect(store)(LitElement) {
           <a ?selected="${this._page === 'view1'}" href="/view1">About Us</a>
           <a ?selected="${this._page === 'view2'}" href="/view2">Menu</a>
           <a ?selected="${this._page === 'view3'}" href="/view3">Order Online</a>
+=======
+      <app-header condenses reveals effects="waterfall">
+        <app-toolbar class="toolbar-top">
+          <button class="menu-btn" title="Menu" @click="${this._menuButtonClicked}">${menuIcon}</button>
+          <div main-title>${this.appTitle}</div>
+        </app-toolbar>
+
+        <!-- This gets hidden on a small screen-->
+        <nav class="toolbar-list">
+          <a ?selected="${this._page === 'view1'}" href="/view1">View One</a>
+          <a ?selected="${this._page === 'view2'}" href="/view2">View Two</a>
+          <a ?selected="${this._page === 'view3'}" href="/view3">View Three</a>
+>>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
         </nav>
       </app-header>
 
@@ -242,11 +271,18 @@ class MyApp extends connect(store)(LitElement) {
           .opened="${this._drawerOpened}"
           @opened-changed="${this._drawerOpenedChanged}">
         <nav class="drawer-list">
+<<<<<<< HEAD
           <a ?selected="${this._page === 'view1'}" href="/view1">About Us</a>
           <a ?selected="${this._page === 'view2'}" href="/view2">Menu</a>
           <a ?selected="${this._page === 'view3'}" href="/view3">Order Online</a>
         </nav>
         
+=======
+          <a ?selected="${this._page === 'view1'}" href="/view1">View One</a>
+          <a ?selected="${this._page === 'view2'}" href="/view2">View Two</a>
+          <a ?selected="${this._page === 'view3'}" href="/view3">View Three</a>
+        </nav>
+>>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
       </app-drawer>
 
       <!-- Main content -->
@@ -258,7 +294,11 @@ class MyApp extends connect(store)(LitElement) {
       </main>
 
       <footer>
+<<<<<<< HEAD
         <p>Made by Raymond Farria</p>
+=======
+        <p>Made with &hearts; by the Polymer team.</p>
+>>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
       </footer>
 
       <snack-bar ?active="${this._snackbarOpened}">

@@ -20,6 +20,10 @@ export const ButtonSharedStyles = css`
   }
 
   button:hover svg {
+<<<<<<< HEAD
     fill: var(#7E287F);
+=======
+    fill: var(--app-primary-color);
+>>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
   }
 `;

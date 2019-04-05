@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "name": "MONIQUE'S CREOLE COOKING",
   "short_name": "MONIQUE'S CREOLE COOKING",
+=======
+  "name": "My App",
+  "short_name": "My App",
+>>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
   "description": "My App description",
   "start_url": "/",
   "display": "standalone",
@@ -8,6 +13,7 @@
   "background_color": "#3f51b5",
   "icons": [
     {
+<<<<<<< HEAD
       "src": "\/android-icon-36x36.png",
       "sizes": "36x36",
       "type": "image\/png",
@@ -45,3 +51,16 @@
      }
     ]
    }
+=======
+      "src": "images/manifest/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/manifest/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+>>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
