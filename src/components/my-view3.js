@@ -11,13 +11,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 import { html, css } from 'lit-element';
 import { PageViewElement } from './page-view-element.js';
 import { connect } from 'pwa-helpers/connect-mixin.js';
-<<<<<<< HEAD
 import {PolymerElement} from '@polymer/polymer';
 import '@polymer/paper-card/paper-card.js';
 import '@polymer/paper-button/paper-button.js';
 
-=======
->>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
 
 // This element is connected to the Redux store.
 import { store } from '../store.js';
@@ -86,7 +83,6 @@ class MyView3 extends connect(store)(PageViewElement) {
 
   render() {
     return html`
-<<<<<<< HEAD
     <a href="https://www.doordash.com/business/261045/?utm_source=partner-link&utm_medium=website&utm_campaign=261045&utm_content=red-xl" target="_blank" alt="Order Food Delivery with DoorDash" title="Order Food Delivery with DoorDash" style="text-decoration: none">
       <div style="position: relative; width:268px; height:118px; margin: 0px auto;margin-top: 100px; background-image: url(https://cdn.doordash.com/media/button/button_red_xl.svg); color:transparent">Order Food Delivery with DoorDash</div>
     </a>
@@ -99,34 +95,6 @@ class MyView3 extends connect(store)(PageViewElement) {
       <div style="position: relative; width:400px; height:233px; margin: 0px auto;margin-top: 50px; background-image: url(https://www.thebullfishbar.com/wp-content/uploads/2016/03/waitrlogo-414x233.png); color:transparent">Order Food Delivery with DoorDash</div>
     </a>
 
-=======
-      <section>
-        <h2>Redux example: shopping cart</h2>
-        <div class="cart">${addToCartIcon}<div class="circle small">${this._quantity}</div></div>
-        <p>This is a slightly more advanced Redux example, that simulates a
-          shopping cart: getting the products, adding/removing items to the
-          cart, and a checkout action, that can sometimes randomly fail (to
-          simulate where you would add failure handling). </p>
-        <p>This view, as well as its 2 child elements, <code>&lt;shop-products&gt;</code> and
-        <code>&lt;shop-cart&gt;</code> are connected to the Redux store.</p>
-      </section>
-      <section>
-        <h3>Products</h3>
-        <shop-products></shop-products>
-
-        <br>
-        <h3>Your Cart</h3>
-        <shop-cart></shop-cart>
-
-        <div>${this._error}</div>
-        <br>
-        <p>
-          <button ?hidden="${this._quantity == 0}" @click="${this._checkoutButtonClicked}">
-            Checkout
-          </button>
-        </p>
-      </section>
->>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
     `;
   }
 

@@ -55,7 +55,6 @@ export const SharedStyles = css`
     font-size: 30px;
     line-height: 64px;
   }
-<<<<<<< HEAD
 
   p {
     text-indent: 4em;
@@ -103,6 +102,4 @@ export const SharedStyles = css`
     font-family: arial;
     margin-top: -22px;
   }
-=======
->>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
 `;

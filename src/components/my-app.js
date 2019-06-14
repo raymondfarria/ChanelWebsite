@@ -232,7 +232,6 @@ class MyApp extends connect(store)(LitElement) {
     // Anything that's related to rendering should be done in here.
     return html`
       <!-- Header -->
-<<<<<<< HEAD
       <app-header reveals>
         <app-toolbar class="toolbar-top">
           <button class="menu-btn" title="Menu" @click="${this._menuButtonClicked}">${menuIcon}</button>
@@ -250,19 +249,6 @@ class MyApp extends connect(store)(LitElement) {
           <a ?selected="${this._page === 'view1'}" href="/view1">About Us</a>
           <a ?selected="${this._page === 'view2'}" href="/view2">Menu</a>
           <a ?selected="${this._page === 'view3'}" href="/view3">Order Online</a>
-=======
-      <app-header condenses reveals effects="waterfall">
-        <app-toolbar class="toolbar-top">
-          <button class="menu-btn" title="Menu" @click="${this._menuButtonClicked}">${menuIcon}</button>
-          <div main-title>${this.appTitle}</div>
-        </app-toolbar>
-
-        <!-- This gets hidden on a small screen-->
-        <nav class="toolbar-list">
-          <a ?selected="${this._page === 'view1'}" href="/view1">View One</a>
-          <a ?selected="${this._page === 'view2'}" href="/view2">View Two</a>
-          <a ?selected="${this._page === 'view3'}" href="/view3">View Three</a>
->>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
         </nav>
       </app-header>
 
@@ -271,18 +257,11 @@ class MyApp extends connect(store)(LitElement) {
           .opened="${this._drawerOpened}"
           @opened-changed="${this._drawerOpenedChanged}">
         <nav class="drawer-list">
-<<<<<<< HEAD
           <a ?selected="${this._page === 'view1'}" href="/view1">About Us</a>
           <a ?selected="${this._page === 'view2'}" href="/view2">Menu</a>
           <a ?selected="${this._page === 'view3'}" href="/view3">Order Online</a>
         </nav>
         
-=======
-          <a ?selected="${this._page === 'view1'}" href="/view1">View One</a>
-          <a ?selected="${this._page === 'view2'}" href="/view2">View Two</a>
-          <a ?selected="${this._page === 'view3'}" href="/view3">View Three</a>
-        </nav>
->>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
       </app-drawer>
 
       <!-- Main content -->
@@ -294,11 +273,7 @@ class MyApp extends connect(store)(LitElement) {
       </main>
 
       <footer>
-<<<<<<< HEAD
         <p>Made by Raymond Farria</p>
-=======
-        <p>Made with &hearts; by the Polymer team.</p>
->>>>>>> 14bf54a... Merge pull request #352 from darvid7/patch-1
       </footer>
 
       <snack-bar ?active="${this._snackbarOpened}">
